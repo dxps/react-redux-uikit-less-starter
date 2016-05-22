@@ -1,12 +1,11 @@
 
-// TBD: not working
-//      workaround: refering
-// @import "./uikit/uikit.less";
+@import "./uikit/uikit";
 
+@import "./_lato";
 
-@import "./_lato.less";
+@import "./_paper-theme";
 
-@import "./_paper-theme.less";
+@visva-radius: 4px;
 
 body {
   font-family: 'Lato';
@@ -14,5 +13,9 @@ body {
 
 .content {
   padding: 5px;
+}
+
+.uk-navbar {
+  border-radius: @visva-radius;
 }
 

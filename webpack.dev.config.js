@@ -13,8 +13,7 @@ module.exports = {
         historyApiFallback: true,
         contentBase: './',
         headers: { 'Access-Control-Allow-Origin': '*' },
-        stats: { colors: true },
-        hot: true
+        stats: { colors: true }
     },
 
     entry: [
@@ -40,7 +39,7 @@ module.exports = {
                 }
             }, {
                 test: /\.less$/,
-                loaders: ["style", "css?modules&importLoaders=2", "less-loader", "uikit-loader" ]
+                loader: "style!css-loader!less-loader"
             }, {
                 test: /(\.css)$/,
                 // ExtractTextPlugin does not work with HMR, but it will be included in webpack prod config
