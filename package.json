@@ -1,5 +1,5 @@
 {
-  "name": "react-redux-bootstrap-sass-starter",
+  "name": "react-redux-uikit-less-starter",
   "version": "0.0.1",
   "description": "Starter using React with Redux and UIKit, plus custom less",
   "main": "index.js",
